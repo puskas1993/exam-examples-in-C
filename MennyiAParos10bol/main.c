@@ -13,24 +13,18 @@
  */
 int main(int argc, char** argv) 
 {
-    int tiz=0;
-    int parosok=0;
-    int szam=0;
+    int tiz=0,paros=0,szam=0;
     
-    while(tiz!=10)
+    for(tiz=0;tiz<10;tiz++)
     {
         printf("Kerem, adjon meg egy szamot:\n");
         scanf("%d",&szam);
-        if(szam%2=0) //itt valami nem stimmel
+        if(szam%2==0)
         {
-            parosok++;
-            tiz++;
+            paros++;
         }
-        printf("Kerem, ujra adjon meg egy szamot:\n");
-        scanf("%d",&szam);
-        tiz++;
     }
-    printf("Parosok szama: %d",parosok);
+    printf("Parosak szama: %d",paros);
     
     return (EXIT_SUCCESS);
 }
